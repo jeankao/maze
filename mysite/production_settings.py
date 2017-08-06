@@ -10,7 +10,8 @@ DATABASES = {
 }
 
 # Static asset configuration.
-STATIC_ROOT = 'static'
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure().
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
