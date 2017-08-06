@@ -22,3 +22,5 @@ ALLOWED_HOSTS = ['*']
 DEBUG = False
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+config.assets.compile = true
